@@ -18,12 +18,20 @@ Dessa forma, com essa stack the bibliotecas poderemos carregar uma imagem raster
 
 E, por isso, decidi explorar essa alternativa, ainda que *frontend* (e JavaScript) não seja a "minha praia". A verdade é que não consegui conter o entusiasmo e parti para uma prova conceitual. [Compartilho a prova de conceito que fiz](https://observablehq.com/@felipesbarros/proof_of_concept_geoblaze), usando o [observablehq](https://observablehq.com) (uma espécie de *jupyter-notebook* para programação *frontend*). 
 
-Aproveitei para consolidar o resultado em uma [*landingpage*, que pode ser vista aqui](https://felipesbarros.github.io/geoblaze_test/). Nela, além de apresentar o raster, foi possível garantir que o usuário possa interagir com o mesmo. ao clicar em um pixels, O gráfico é atualizado com o comportamento temporal daquela área, apresentando, ainda o valor máximo sugerido pela Organização Mundial da Saúde.
+Aproveitei para consolidar o resultado em uma *landingpage*. Nela, além de apresentar o raster, foi possível garantir que o usuário possa interagir com o mesmo, de duas formas distintas:  
+* Clicando em um *pixel*;
+* ou clicando em um dos polígonos que representam os limites dos estados que compõem a Amazônia Legal. (:warning: não estamos representando o estado do Maranhão já que o mesmo não é contemplado integramente na Amazônia Legal);  
 
-![](./img/landingpage.png)
+Em ambas implementações os valores dos pixels são extraídos [*just-in-time*](https://pt.wikipedia.org/wiki/Just_in_time) e o gráfico em [plotly](https://plotly.com/) é atualizado representando o comportamento temporal dos mesmos. Tais dados se referem a [Material Particulado < 2.5](https://pt.wikipedia.org/wiki/Material_particulado) do ano de 2020. No gráfico, apresentamos, ainda, o valor máximo sugerido pela Organização Mundial da Saúde (**World Health Organization - WHO**).
+
+Essas duas implementações visam explorar oportunidades diferentes das ferramentas em questão. Separamos os resultados em duas páginas diferentes: [clicando pixel a pixel](https://felipesbarros.github.io/geoblaze_test/clicking_pixel); [clicando num polígono](https://felipesbarros.github.io/geoblaze_test/clicking_polygon);  
+
+<img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage.png">
+
+<img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage_polygon.png">
 
 E, é lógico: tenho tudo documentado no [github](https://github.com/felipesbarros/geoblaze_test/).
 
-Não posso deixar de mencionar que o [protótipo final](https://felipesbarros.github.io/geoblaze_test/) só foi possível com a ajuda do [Kyle Felipe](https://github.com/kylefelipe)
+Não posso deixar de mencionar que o projeto só foi possível com a ajuda do [Kyle Felipe](https://kylefelipe.com) quem, inclusive, foi o responsável pela evolução do projeto implementando a solução em JS baseada na seleção de polígonos.
 
 Espero que seja útil :)
