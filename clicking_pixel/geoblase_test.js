@@ -95,7 +95,7 @@ function plotData() { // função que gera um gráfico quando os dados são pass
     type: 'scatter',
     mode: 'lines',
     name: 'WHO',
-    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dic'],
+    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     y: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
     line: { color: '#000000',
             dash: 'dot'},
@@ -104,7 +104,7 @@ function plotData() { // função que gera um gráfico quando os dados são pass
     type: 'scatter',
     mode: 'lines',
     name: 'pm<2.5',
-    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dic'],
+    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     y: values,
     line: { color: '#FF0000' },
   };
