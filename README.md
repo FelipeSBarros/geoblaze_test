@@ -21,11 +21,11 @@ E, por isso, decidi explorar essa alternativa, ainda que *frontend* (e JavaScrip
 Aproveitei para consolidar o resultado em uma *landingpage*. Nela, além de apresentar o raster, foi possível garantir que o usuário possa interagir com o mesmo, de duas formas distintas:  
 * Clicando em um *pixel*;
 
-* <img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage.png"/>
+<img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage.png"/>
 
 * ou clicando em um dos polígonos que representam os limites dos estados que compõem a Amazônia Legal. (:warning: não estamos representando o estado do Maranhão já que o mesmo não é contemplado integramente na Amazônia Legal);  
 
-* <img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage_polygon.png"/>
+<img width=50% src="https://felipesbarros.github.io/geoblaze_test/img/landingpage_polygon.png"/>
 
 Em ambas implementações os valores dos pixels são extraídos [*just-in-time*](https://pt.wikipedia.org/wiki/Just_in_time) e o gráfico em [plotly](https://plotly.com/) é atualizado representando o comportamento temporal dos mesmos. Tais dados se referem a [Material Particulado < 2.5](https://pt.wikipedia.org/wiki/Material_particulado) do ano de 2020. No gráfico, apresentamos, ainda, o valor máximo sugerido pela Organização Mundial da Saúde (**World Health Organization - WHO**).
 
